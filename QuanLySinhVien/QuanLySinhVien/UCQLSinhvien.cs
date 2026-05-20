@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLySinhVien
 {
-    public partial class FormQLSV : Form
+    public partial class UCQLSinhvien : UserControl
     {
-        public FormQLSV()
+        public UCQLSinhvien()
         {
             InitializeComponent();
-        }
-
-        private void FormQLSV_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

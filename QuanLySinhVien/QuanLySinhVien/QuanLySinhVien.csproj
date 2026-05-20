@@ -72,6 +72,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCQLLophoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQLLophoc.Designer.cs">
+      <DependentUpon>UCQLLophoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCQLSinhvien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCQLSinhvien.Designer.cs">
+      <DependentUpon>UCQLSinhvien.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +105,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UCQLLophoc.resx">
+      <DependentUpon>UCQLLophoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCQLSinhvien.resx">
+      <DependentUpon>UCQLSinhvien.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

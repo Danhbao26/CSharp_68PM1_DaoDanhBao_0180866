@@ -16,7 +16,16 @@ namespace QuanLySinhVien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_dangnhap());
+
+            // 1. Tạo và hiển thị Form đăng nhập dưới dạng hộp thoại kiểm tra (ShowDialog)
+            Form_dangnhap fLogin = new Form_dangnhap();
+
+            // Nếu Form đăng nhập trả về kết quả là OK (Đăng nhập thành công)
+            if (fLogin.ShowDialog() == DialogResult.OK)
+            {
+                // 2. Chạy ứng dụng chính với FormMain là Form chủ đạo
+                Application.Run(new FormMain());
+            }
         }
     }
 }

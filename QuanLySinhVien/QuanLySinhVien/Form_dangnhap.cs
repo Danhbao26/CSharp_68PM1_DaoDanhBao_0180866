@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLySinhVien
 {
-    public partial class Form1 : Form
+    public partial class Form_dangnhap : Form
     {
-        public Form1()
+        public Form_dangnhap()
         {
             InitializeComponent();
         }
@@ -34,11 +34,8 @@ namespace QuanLySinhVien
             if (username == "0180866@st.huce.edu.vn" && password == "0180866")
             {
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                // Tại đây bạn có thể mở Form chính của ứng dụng
-                // MainMenu formMain = new MainMenu();
-                // formMain.Show();
-                // this.Hide(); 
+                this.DialogResult = DialogResult.OK;
+                this.Close();
             }
             else
             {
@@ -46,6 +43,11 @@ namespace QuanLySinhVien
                 txt_password.Clear();
                 txt_username.Focus();
             }
+        }
+
+        private void Form_dangnhap_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
